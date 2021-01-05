@@ -1,0 +1,38 @@
+{
+  "name": "aslin-beer-alerter",
+  "version": "1.0.0",
+  "description": "Email alerts to for your beer of choice from Aslin!",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "dev": "tsc; NODE_ENV=development node build/index.js",
+    "build": "tsc",
+    "start": "NODE_ENV=production node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/princefishthrower/aslin-beer-alerter.git"
+  },
+  "keywords": [
+    "beer",
+    "email",
+    "alerts",
+    "crawler"
+  ],
+  "author": "Chris Frewin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/princefishthrower/aslin-beer-alerter/issues"
+  },
+  "homepage": "https://github.com/princefishthrower/aslin-beer-alerter#readme",
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "node-mailjet": "^3.3.1",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.19",
+    "@types/node-cron": "^2.0.3",
+    "@types/puppeteer": "^5.4.2"
+  }
+}
