@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
-    "dev": "tsc; NODE_ENV=development node build/index.js",
+    "dev": "tsc && NODE_ENV=development node build/index.js",
     "build": "tsc",
-    "start": "NODE_ENV=production node build/index.js"
+    "start": "tsc && NODE_ENV=production node build/index.js"
   },
   "repository": {
     "type": "git",
